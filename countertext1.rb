@@ -14,8 +14,16 @@ class TestCounter < Minitest::Test
 		assert_equal(Integer, counterClass(1))
 	end
 
-def test_assert_that_counter_ar_contains_nums_divisible_by_counter
+def test_assert_that_counter_ar_contains_nums_divisible_by_5
 	assert_equal(true, counting(5))
+end
+
+def test_assert_that_counter_ar_values_are_divisible_by_2
+	assert_equal(true, counting(2))
+end
+
+def test_assert_that_wombat_is_rejected
+	assert_equal(false, counting("wombat"))
 end
 
 end
